@@ -105,6 +105,7 @@ body{
         font-size: 11px;
         padding: 7px 10px;
         white-space: nowrap;
+        margin-right: 10px; /* right side */
     }
 }
 
