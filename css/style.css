@@ -813,6 +813,10 @@ body{
         margin-bottom: 16px;
     }
 
+     .selected-state{
+        padding-top: 18px;
+    }
+
     /* CHANGE BUTTON */
 
     .change-btn{
@@ -824,13 +828,12 @@ body{
     /* CLOSE BUTTON */
 
     .close-btn{
-        width: 20px;
-        height: 20px;
-
-        top: 5px;
-        right: 5px;
-
-        font-size: 10px;
+        width: 24px;
+        height: 24px;
+        top: 8px;
+        right: 8px;
+        font-size: 12px;
+        z-index: 50;
     }
 
     /* TABLE */
