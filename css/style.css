@@ -833,6 +833,7 @@ body{
         top: 8px;
         right: 8px;
         font-size: 12px;
+        margin-right: 10px;
         z-index: 50;
     }
 
