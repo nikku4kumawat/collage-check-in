@@ -98,14 +98,14 @@ body{
 
     .logo{
         height: 150px;
-        margin-left: -60px;
+        margin-left: -80px;
     }
 
     .guide-btn{
         font-size: 11px;
         padding: 7px 10px;
         white-space: nowrap;
-        margin-right: 10px; /* right side */
+        margin-right: 20px; /* right side */
     }
 }
 
