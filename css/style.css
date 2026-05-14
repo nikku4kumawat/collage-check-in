@@ -824,13 +824,13 @@ body{
     /* CLOSE BUTTON */
 
     .close-btn{
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
 
         top: 5px;
         right: 5px;
 
-        font-size: 12px;
+        font-size: 10px;
     }
 
     /* TABLE */
