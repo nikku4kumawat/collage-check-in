@@ -599,21 +599,6 @@ body{
     color: #666;
 }
 
-.best-tag{
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-
-    padding: 4px 10px;
-    border-radius: 999px;
-
-    background: #fef3c7;
-    color: #ca8a04;
-
-    font-size: 12px;
-    font-weight: 600;
-}
-
 
 /* DEFAULT HIDE */
 
@@ -690,7 +675,7 @@ body{
 
 
 .metric-name{
-    padding: 5px;
+    padding: 16px;
     border-right: 1px solid #e5e7eb;
     font-size: 14px;
     font-weight: 500;
@@ -701,7 +686,7 @@ body{
 }
 
 .metric-value{
-    padding: 5px;
+    padding: 16px;
     border-right: 1px solid #e5e7eb;
     text-align: center;
     font-size: 14px;
@@ -883,7 +868,7 @@ body{
     .metric-value,
     .header-title,
     .header-university{
-        padding: 8px;
+        padding: 12px;
     }
 
     .metric-name{
@@ -893,23 +878,6 @@ body{
     .metric-value{
         font-size: 12px;
     }
-
-    .best-tag{
-    display: inline-flex;
-    align-items: center;
-    gap: 2px;
-
-    padding: 4px 10px;
-    border-radius: 999px;
-
-    background: #fef3c7;
-    color: #ca8a04;
-
-    font-size: 6px;
-    
-    font-weight: 600;
-}
-
 
 }
 
