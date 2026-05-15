@@ -580,8 +580,33 @@ body{
     font-size: 12px;
     color: #6b7280;
     font-weight: 500;
+    overflow: hidden;
 }
 
+.header-logo img{
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    background: white;
+    border-radius: 8px;
+    padding: 4px;
+    display: none;
+}
+
+.header-logo span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #666;
+}
+
+
+/* DEFAULT HIDE */
+
+#tableLogo1,
+#tableLogo2{
+    display: none;
+}
+ 
 .header-name{
     font-size: 14px;
     font-weight: 600;
