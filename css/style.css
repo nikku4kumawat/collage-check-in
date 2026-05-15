@@ -896,20 +896,7 @@ body{
 
 }
 
-.best-tag{
-    display: inline-flex;
-    align-items: center;
-    gap: 3px;
 
-    padding: 3px 18px;
-    border-radius: 999px;
-
-    background: #fef3c7;
-    color: #ca8a04;
-
-    font-size: 6px;
-    font-weight: 600;
-}
 
 
 
