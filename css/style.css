@@ -599,6 +599,21 @@ body{
     color: #666;
 }
 
+.best-tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+
+    padding: 4px 10px;
+    border-radius: 999px;
+
+    background: #fef3c7;
+    color: #ca8a04;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
 
 /* DEFAULT HIDE */
 
@@ -673,8 +688,9 @@ body{
     border-bottom: 1px solid #e5e7eb;
 }
 
+
 .metric-name{
-    padding: 16px;
+    padding: 5px;
     border-right: 1px solid #e5e7eb;
     font-size: 14px;
     font-weight: 500;
@@ -685,7 +701,7 @@ body{
 }
 
 .metric-value{
-    padding: 16px;
+    padding: 5px;
     border-right: 1px solid #e5e7eb;
     text-align: center;
     font-size: 14px;
@@ -867,7 +883,7 @@ body{
     .metric-value,
     .header-title,
     .header-university{
-        padding: 12px;
+        padding: 10px;
     }
 
     .metric-name{
