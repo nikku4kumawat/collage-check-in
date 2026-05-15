@@ -599,6 +599,21 @@ body{
     color: #666;
 }
 
+.best-tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+
+    padding: 4px 10px;
+    border-radius: 999px;
+
+    background: #fef3c7;
+    color: #ca8a04;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
 
 /* DEFAULT HIDE */
 
@@ -879,6 +894,21 @@ body{
         font-size: 12px;
     }
 
+}
+
+.best-tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+
+    padding: 3px 18px;
+    border-radius: 999px;
+
+    background: #fef3c7;
+    color: #ca8a04;
+
+    font-size: 6px;
+    font-weight: 600;
 }
 
 
