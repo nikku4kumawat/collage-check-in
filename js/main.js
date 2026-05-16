@@ -368,26 +368,233 @@ function updateComparison(){
 
     if(!uni1 || !uni2){
 
-        document.getElementById(
-        "tableLogo1"
-        ).style.display = "none";
+    /* LOGO RESET */
 
-        document.getElementById(
-        "tableLogo2"
-        ).style.display = "none";
+    document.getElementById(
+    "tableLogo1"
+    ).style.display = "none";
 
-        document.getElementById(
-        "defaultText1"
-        ).style.display = "block";
+    document.getElementById(
+    "tableLogo2"
+    ).style.display = "none";
 
-        document.getElementById(
-        "defaultText2"
-        ).style.display = "block";
+    document.getElementById(
+    "defaultText1"
+    ).style.display = "block";
 
-        return;
+    document.getElementById(
+    "defaultText2"
+    ).style.display = "block";
 
-    }
 
+    /* HEADER RESET */
+
+    document.getElementById(
+    "tableName1"
+    ).innerText = "Select";
+
+    document.getElementById(
+    "tableName2"
+    ).innerText = "Select";
+
+    document.getElementById(
+    "tableLocation1"
+    ).innerText = "University";
+
+    document.getElementById(
+    "tableLocation2"
+    ).innerText = "University";
+
+
+    /* FREE PREVIEW RESET */
+
+    document.getElementById(
+    "accreditation1"
+    ).innerHTML = "🔒";
+
+    document.getElementById(
+    "accreditation2"
+    ).innerHTML = "🔒";
+
+
+    document.getElementById(
+    "fee1"
+    ).innerHTML = "🔒";
+
+    document.getElementById(
+    "fee2"
+    ).innerHTML = "🔒";
+
+
+    document.getElementById(
+    "emi1"
+    ).innerHTML =
+    `
+    <span class="success-pill">
+        ✓ 🔒
+    </span>
+    `;
+
+
+    document.getElementById(
+    "emi2"
+    ).innerHTML =
+    `
+    <span class="success-pill">
+        ✓ 🔒
+    </span>
+    `;
+
+
+
+    /* LOCK AGAIN */
+
+if(!isUnlocked){
+
+    document.querySelector(
+    ".overlay-box"
+    ).style.display = "flex";
+
+    document.querySelector(
+    ".locked-section"
+    ).classList.remove("unlocked");
+
+}
+else{
+
+    document.querySelector(
+    ".overlay-box"
+    ).style.display = "none";
+
+    document.querySelector(
+    ".locked-section"
+    ).classList.add("unlocked");
+
+}
+
+
+/* LOCKED DATA RESET */
+
+document.getElementById(
+"ranking1"
+).innerHTML = "🔒";
+
+document.getElementById(
+"ranking2"
+).innerHTML = "🔒";
+
+
+document.getElementById(
+"salary1"
+).innerHTML =
+`
+🔒
+<div class="small-text">
+    Median
+</div>
+`;
+
+
+document.getElementById(
+"salary2"
+).innerHTML =
+`
+🔒
+<div class="small-text">
+    Median
+</div>
+`;
+
+
+document.getElementById(
+"placement1"
+).innerHTML = "🔒";
+
+document.getElementById(
+"placement2"
+).innerHTML = "🔒";
+
+
+document.getElementById(
+"monthlyEmi1"
+).innerHTML =
+`
+🔒
+<div class="small-text">
+    0% interest
+</div>
+`;
+
+
+document.getElementById(
+"monthlyEmi2"
+).innerHTML =
+`
+🔒
+<div class="small-text">
+    0% interest
+</div>
+`;
+
+
+document.getElementById(
+"alumni1"
+).innerHTML = "🔒";
+
+document.getElementById(
+"alumni2"
+).innerHTML = "🔒";
+
+
+document.getElementById(
+"scholarship1"
+).innerHTML =
+`
+<span class="success-pill">
+    ✓ 🔒
+</span>
+`;
+
+
+document.getElementById(
+"scholarship2"
+).innerHTML =
+`
+<span class="success-pill">
+    ✓ 🔒
+</span>
+`;
+
+
+document.getElementById(
+"roi1"
+).innerHTML = "🔒";
+
+document.getElementById(
+"roi2"
+).innerHTML = "🔒";
+
+
+document.getElementById(
+"roiTag1"
+).innerHTML = "🔒";
+
+document.getElementById(
+"roiTag2"
+).innerHTML = "🔒";
+
+
+document.getElementById(
+"best1"
+).innerHTML = "🔒";
+
+document.getElementById(
+"best2"
+).innerHTML = "🔒";
+
+    return;
+
+}
 
     /* =========================
     LOGOS
@@ -915,7 +1122,12 @@ unlockSubmit.addEventListener("click", () => {
 
     /* REAL UNLOCK */
 
-    isUnlocked = true;
+isUnlocked = true;
+
+const uni1 = selectedUniversities[1];
+const uni2 = selectedUniversities[2];
+
+if(uni1 && uni2){
 
     document.querySelector(
     ".overlay-box"
@@ -925,8 +1137,10 @@ unlockSubmit.addEventListener("click", () => {
     ".locked-section"
     ).classList.add("unlocked");
 
-    closeUnlockModal();
+}
 
-    updateComparison();
+closeUnlockModal();
+
+updateComparison();
 
 });

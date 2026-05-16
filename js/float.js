@@ -1,15 +1,33 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const floatHTML = `
-    <div class="ss-float-container">
-        <a href="https://wa.me/9950000686 " target="_blank" class="ss-float-btn ss-whatsapp">
-            <i class="fab fa-whatsapp"></i>
-            <span>WhatsApp</span>
-        </a>
-    </div>`;
+const floatHTML = `
+    
+    <div class="floating-container">
 
-    // Yahan humne specific ID ko pakda hai
-    const placeholder = document.getElementById('ss-float-placeholder');
-    if(placeholder) {
-        placeholder.innerHTML = floatHTML;
-    }
-});
+        <!-- CALL BUTTON -->
+        <a
+        href="tel:+919950000686"
+        class="float-btn call-btn"
+        >
+            📞
+        </a>
+
+        <!-- WHATSAPP BUTTON -->
+        <a
+        href="https://wa.me/919950000686"
+        target="_blank"
+        class="float-btn whatsapp-btn"
+        >
+            💬
+        </a>
+
+    </div>
+
+`;
+
+
+/* =========================
+ADD FLOAT BUTTON
+========================= */
+
+document.getElementById(
+"ss-float-placeholder"
+).innerHTML = floatHTML;
