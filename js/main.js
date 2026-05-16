@@ -49,7 +49,7 @@ const universities = [
         fee: "1.8 - 2.5 L",
         emi: "✓ Available",
 
-        ranking: "Top 40",
+        ranking: "Top 50",
         salary: "₹9.5 LPA <span class='best-tag'>⭐ Best</span>",
         placement: "82% <span class='best-tag'>⭐ Best</span>",
         monthlyEmi: "₹6,500/mo",
@@ -106,7 +106,7 @@ const universities = [
         logo: "img/Symbiosis_International_University_Logo.png",
 
         accreditation: "UGC, NAAC A++",
-        fee: "1.8 - 2.4 L <span class='best-tag'>⭐ Best</span>",
+        fee: "1.8 - 2.4 L",
         emi: "✓ No-Cost EMI",
 
         ranking: "Top 30",
