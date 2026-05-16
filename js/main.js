@@ -1095,6 +1095,61 @@ backBtn.addEventListener("click", () => {
 FINAL UNLOCK
 ========================= */
 
+// unlockSubmit.addEventListener("click", () => {
+
+//     const name =
+//     document.getElementById("userName").value.trim();
+
+//     const email =
+//     document.getElementById("userEmail").value.trim();
+
+//     const phone =
+//     document.getElementById("userPhone").value.trim();
+
+
+//     if(
+//         name === "" ||
+//         email === "" ||
+//         phone === ""
+//     ){
+
+//         alert("Please fill all details");
+
+//         return;
+
+//     }
+
+
+    /* REAL UNLOCK */
+
+// isUnlocked = true;
+
+// const uni1 = selectedUniversities[1];
+// const uni2 = selectedUniversities[2];
+
+// if(uni1 && uni2){
+
+//     document.querySelector(
+//     ".overlay-box"
+//     ).style.display = "none";
+
+//     document.querySelector(
+//     ".locked-section"
+//     ).classList.add("unlocked");
+
+// }
+
+// closeUnlockModal();
+
+// updateComparison();
+
+// });
+
+
+/* =========================
+FINAL UNLOCK
+========================= */
+
 unlockSubmit.addEventListener("click", () => {
 
     const name =
@@ -1106,6 +1161,8 @@ unlockSubmit.addEventListener("click", () => {
     const phone =
     document.getElementById("userPhone").value.trim();
 
+
+    /* VALIDATION */
 
     if(
         name === "" ||
@@ -1120,27 +1177,67 @@ unlockSubmit.addEventListener("click", () => {
     }
 
 
-    /* REAL UNLOCK */
+    /* SELECTED UNIVERSITIES */
 
-isUnlocked = true;
+    const uni1 = selectedUniversities[1];
 
-const uni1 = selectedUniversities[1];
-const uni2 = selectedUniversities[2];
+    const uni2 = selectedUniversities[2];
 
-if(uni1 && uni2){
 
-    document.querySelector(
-    ".overlay-box"
-    ).style.display = "none";
+    /* WHATSAPP NUMBER */
 
-    document.querySelector(
-    ".locked-section"
-    ).classList.add("unlocked");
+    const whatsappNumber = "919950000686";
 
-}
 
-closeUnlockModal();
+    /* MESSAGE */
 
-updateComparison();
+    const message =
+`  University Comparison Enquiry
+ Course: ${selectedCourse}
+ Name: ${name}
+ Email: ${email}
+ Phone: ${phone}
+
+ University 1:
+${uni1 ? uni1.name : "Not Selected"}
+
+ University 2:
+${uni2 ? uni2.name : "Not Selected"}
+`;
+
+
+    /* OPEN WHATSAPP */
+
+    const whatsappURL =
+    `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+
+    /* UNLOCK */
+
+    isUnlocked = true;
+
+    if(uni1 && uni2){
+
+        document.querySelector(
+        ".overlay-box"
+        ).style.display = "none";
+
+        document.querySelector(
+        ".locked-section"
+        ).classList.add("unlocked");
+
+    }
+
+
+    /* CLOSE MODAL */
+
+    closeUnlockModal();
+
+    updateComparison();
 
 });
